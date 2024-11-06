@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Todo List</title>
+	<script src="./todos.js" defer></script>
+	<!-- <script src="test.js" defer></script> -->
+</head>
+<body>
+	<!-- Create input fields for todo list -->
+	<!-- Use a button to submit and append to selected project -->
+	<div id="form">
+		<p>
+			<label for="title">Title:</label>
+			<input type="text" id="title" name="title" required>
+		</p>
+
+		<p>
+			<label for="desc">Description:</label>
+			<input type="text" id="desc" name="desc">
+		</p>
+
+		<p>
+			<label for="dueDate">Due Date:</label>
+			<input type="date" id="dueDate" name="dueDate">
+		</p>
+
+		<p>
+			<label for="priority">Priority:</label>
+			<input type="number" id="priority" name="priority">
+		</p>
+
+		<p>
+			<!-- Make it a menu -->
+			<label for="project">Project:</label>
+			<select id="project" name="project">
+				<!-- <option value=0>Project</option> -->
+			</select>
+		</p>
+
+		<p class="button">
+			<button id="submit">Submit</button>
+		</p>
+	</div>
+
+	<p>
+		New project: <input id="new-project">
+		<button id="new-proj-submit">Submit</button>
+	</p>
+	<p>
+		<button id="export">Export</button>
+		<button id="clear">Clear Data</button>
+	</p>
+</body>
+</html>
